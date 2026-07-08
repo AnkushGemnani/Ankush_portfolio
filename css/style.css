@@ -795,7 +795,7 @@ button {
 }
 
 .project-card {
-    flex: 0 0 350px;
+    flex: 0 0 450px;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
@@ -844,6 +844,9 @@ button {
 @media (max-width: 1250px) {
     .prev-btn { left: -10px; }
     .next-btn { right: -10px; }
+    .project-card {
+        flex: 0 0 380px;
+    }
 }
 
 @media (max-width: 768px) {
