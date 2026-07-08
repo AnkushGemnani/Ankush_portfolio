@@ -15,7 +15,7 @@
     <!-- Icons (Lucide) -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <link rel="stylesheet" href="css/style.css?v=4">
+    <link rel="stylesheet" href="css/style.css?v=10">
 </head>
 <body>
     <!-- Background Grid / Glow -->
@@ -42,12 +42,13 @@
         </button>
         <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
+            <li><a href="#terminal-section">Terminal</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#terminal-section">Terminal</a></li>
         </ul>
     </nav>
 
@@ -64,7 +65,7 @@
                     <span id="typing-role"></span><span class="typing-cursor">|</span>
                 </h2>
                 <p class="tagline slide-up fade-in delay-3">
-                    Driven by <span class="highlight-code">curiosity</span>.<br>Powered by <span class="highlight-code">code</span>.
+                    Bridging <span class="highlight-code">technology</span>, <span class="highlight-code">business development</span>, and <span class="highlight-code">operations</span>.
                 </p>
 
                 <div class="hero-cta slide-up fade-in delay-4">
@@ -176,29 +177,30 @@
                 </div>
 
                 <div class="skills-grid">
-                    <!-- Languages -->
+                    <!-- Dev & Web -->
                     <div class="skill-category glass-card fade-in slide-up delay-1">
-                        <h3><i data-lucide="code" size="24"></i> Languages</h3>
+                        <h3><i data-lucide="code" size="24"></i> Dev & Web</h3>
                         <ul class="skill-tags">
                             <li>Java</li><li>Python</li><li>C/C++</li><li>C#</li>
-                        </ul>
-                    </div>
-
-                    <!-- Web & Data -->
-                    <div class="skill-category glass-card fade-in slide-up delay-2">
-                        <h3><i data-lucide="globe" size="24"></i> Web & Data</h3>
-                        <ul class="skill-tags">
                             <li>HTML</li><li>CSS</li><li>JavaScript</li>
-                            <li>SQL</li><li>Data Modeling</li>
                         </ul>
                     </div>
 
-                    <!-- Tools & Concepts -->
-                    <div class="skill-category glass-card fade-in slide-up delay-3">
-                        <h3><i data-lucide="wrench" size="24"></i> Tools & Concepts</h3>
+                    <!-- Business & Analytics -->
+                    <div class="skill-category glass-card fade-in slide-up delay-2">
+                        <h3><i data-lucide="bar-chart-3" size="24"></i> Business & Analytics</h3>
                         <ul class="skill-tags">
-                            <li>GitHub</li><li>Windows</li><li>Linux</li><li>Unix</li>
-                            <li>SDLC</li><li>Software Testing</li><li>Debugging</li><li>Computer Networking</li>
+                            <li>Power BI</li><li>SQL</li><li>PostgreSQL</li><li>Microsoft Excel</li>
+                            <li>Google Sheets</li><li>Data Visualization</li><li>KPI Tracking</li><li>Reporting & Insights</li>
+                        </ul>
+                    </div>
+
+                    <!-- Operations & Strategy -->
+                    <div class="skill-category glass-card fade-in slide-up delay-3">
+                        <h3><i data-lucide="activity" size="24"></i> Operations & Strategy</h3>
+                        <ul class="skill-tags">
+                            <li>Business Development</li><li>Operations Management</li><li>Project Coordination</li>
+                            <li>Event Management</li><li>Process Improvement</li><li>Sales & Negotiation</li><li>SDLC</li><li>GitHub</li>
                         </ul>
                     </div>
                 </div>
@@ -209,9 +211,104 @@
         <section id="projects" class="projects-section section-spacing">
             <div class="container">
                 <h2 class="section-title fade-in slide-up">Featured Projects</h2>
-                <div class="projects-grid">
-                    <!-- Project 1: College Announcement Portal -->
+                <div class="projects-wrapper">
+                    <button class="slider-btn prev-btn" aria-label="Previous Project"><i data-lucide="chevron-left"></i></button>
+                    <button class="slider-btn next-btn" aria-label="Next Project"><i data-lucide="chevron-right"></i></button>
+                    <div class="projects-grid">
+                        <!-- Project 1: Turf Titans -->
                     <div class="project-card glass-card fade-in slide-up delay-1" data-tilt>
+                        <div class="project-img-wrapper">
+                            <img src="assets/project_turftitans.png" alt="Turf Titans Preview" class="project-img">
+                        </div>
+                        <div class="project-header">
+                            <i data-lucide="trophy" size="32" color="#ffbd2e"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/AnkushGemnani/turftitans" target="_blank" aria-label="GitHub Repository"><i data-lucide="github" size="20"></i></a>
+                                <a href="https://turftitans.vercel.app/" target="_blank" aria-label="Live Demo"><i data-lucide="external-link" size="20"></i></a>
+                            </div>
+                        </div>
+                        <h3>Turf Titans</h3>
+                        <p>A full-stack web application for auction-based cricket tournaments. Features player registration, live bidding dashboards, team budget tracking, and PWA support.</p>
+                        <div class="project-learnings">
+                            <span class="learning-tag"><i data-lucide="lightbulb" size="12"></i> Full-Stack Workflows</span>
+                            <span class="learning-tag"><i data-lucide="lightbulb" size="12"></i> Database Schema & State</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>React</span><span>Supabase</span><span>PWA</span><span>Tailwind CSS</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: StandEase E-commerce -->
+                    <div class="project-card glass-card fade-in slide-up delay-2" data-tilt>
+                        <div class="project-img-wrapper">
+                            <img src="assets/standing_desk.png" alt="StandEase Preview" class="project-img">
+                        </div>
+                        <div class="project-header">
+                            <i data-lucide="shopping-cart" size="32" color="var(--accent-secondary)"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/AnkushGemnani/Standingdesk-website" target="_blank" aria-label="GitHub Repository"><i data-lucide="github" size="20"></i></a>
+                                <a href="https://ankushgemnani.github.io/Standingdesk-website/" target="_blank" aria-label="Live Demo"><i data-lucide="external-link" size="20"></i></a>
+                            </div>
+                        </div>
+                        <h3>StandEase</h3>
+                        <p>Conceptualized and led development of a functional e-commerce platform. Optimized the user journey, product listings, and cart experience to maximize customer conversion and retention.</p>
+                        <div class="project-learnings">
+                            <span class="learning-tag"><i data-lucide="lightbulb" size="12"></i> Business Strategy</span>
+                            <span class="learning-tag"><i data-lucide="lightbulb" size="12"></i> UX User Journeys</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: AI Skin Disease Detection System -->
+                    <div class="project-card glass-card fade-in slide-up delay-3" data-tilt>
+                        <div class="project-img-wrapper">
+                            <img src="assets/project_skin_disease.png" alt="AI Skin Disease Detection Preview" class="project-img">
+                        </div>
+                        <div class="project-header">
+                            <i data-lucide="activity" size="32" color="#f43f5e"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Aasthahahaha/AI-skin-disease-detection-system-with-doctor-Validation" target="_blank" aria-label="GitHub Repository"><i data-lucide="github" size="20"></i></a>
+                                <a href="https://ai-skin-disease-detection-system-wi-three.vercel.app/" target="_blank" aria-label="Live Demo"><i data-lucide="external-link" size="20"></i></a>
+                            </div>
+                        </div>
+                        <h3>AI Skin Disease Detection</h3>
+                        <p>An AI-assisted prototype web application for skin disease detection, featuring a dual-portal workflow for users to upload/analyze images and doctors to review/validate cases.</p>
+                        <div class="project-learnings">
+                            <span class="learning-tag"><i data-lucide="lightbulb" size="12"></i> Role-Based Access Control</span>
+                            <span class="learning-tag"><i data-lucide="lightbulb" size="12"></i> Medical AI Simulation</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span><span>Streamlit</span><span>JSON DB</span><span>ML Prototyping</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Hita's Portfolio -->
+                    <div class="project-card glass-card fade-in slide-up delay-1" data-tilt>
+                        <div class="project-img-wrapper">
+                            <img src="assets/project_hita_portfolio.png" alt="Hita's Portfolio Preview" class="project-img">
+                        </div>
+                        <div class="project-header">
+                            <i data-lucide="briefcase" size="32" color="var(--accent-primary)"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/AnkushGemnani/Hita-s-portfolio" target="_blank" aria-label="GitHub Repository"><i data-lucide="github" size="20"></i></a>
+                                <a href="https://hita-s-portfolio.vercel.app/" target="_blank" aria-label="Live Demo"><i data-lucide="external-link" size="20"></i></a>
+                            </div>
+                        </div>
+                        <h3>Hita's Portfolio</h3>
+                        <p>A highly customized, premium HR and Finance Operations portfolio website built for a BMS graduate. Showcases cashbook management, Tally accounting experience, and key credentials.</p>
+                        <div class="project-learnings">
+                            <span class="learning-tag"><i data-lucide="lightbulb" size="12"></i> Responsive Web Design</span>
+                            <span class="learning-tag"><i data-lucide="lightbulb" size="12"></i> Modern Visual Aesthetics</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Next.js</span><span>Tailwind CSS</span><span>React</span><span>Framer Motion</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: College Announcement Portal -->
+                    <div class="project-card glass-card fade-in slide-up delay-2" data-tilt>
                         <div class="project-img-wrapper">
                             <img src="assets/project_announcement.png" alt="College Announcement Portal Preview" class="project-img">
                         </div>
@@ -232,33 +329,10 @@
                         </div>
                     </div>
 
-                    <!-- Project 2: Standing Desk E-commerce -->
-                    <div class="project-card glass-card fade-in slide-up delay-2" data-tilt>
-                        <div class="project-img-wrapper">
-                            <img src="assets/standing_desk.png" alt="Standing Desk E-Commerce Preview" class="project-img">
-                        </div>
-                        <div class="project-header">
-                            <i data-lucide="shopping-cart" size="32" color="var(--accent-secondary)"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/AnkushGemnani/Standingdesk-website" target="_blank" aria-label="GitHub Repository"><i data-lucide="github" size="20"></i></a>
-                                <a href="https://ankushgemnani.github.io/Standingdesk-website/" target="_blank" aria-label="Live Demo"><i data-lucide="external-link" size="20"></i></a>
-                            </div>
-                        </div>
-                        <h3>Standing Desk Website</h3>
-                        <p>Developed a front-end website with clean UI and responsive layout. Implemented product sections and basic interactivity using JavaScript.</p>
-                        <div class="project-learnings">
-                            <span class="learning-tag"><i data-lucide="lightbulb" size="12"></i> Layout Design</span>
-                            <span class="learning-tag"><i data-lucide="lightbulb" size="12"></i> UX Visual Design</span>
-                        </div>
-                        <div class="project-tech">
-                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 3: AF Fitness -->
+                    <!-- Project 6: Calorie Tracker Application -->
                     <div class="project-card glass-card fade-in slide-up delay-3" data-tilt>
                         <div class="project-img-wrapper">
-                            <img src="assets/project_fitness.png" alt="AF Fitness Preview" class="project-img">
+                            <img src="assets/project_fitness.png" alt="Calorie Tracker Preview" class="project-img">
                         </div>
                         <div class="project-header">
                             <i data-lucide="heart-pulse" size="32" color="#27c93f"></i>
@@ -276,7 +350,30 @@
                             <span>C#</span><span>.NET</span><span>WinForms</span><span>Visual Studio</span>
                         </div>
                     </div>
+
+                    <!-- Project 7: Traffic Analysis Dashboard -->
+                    <div class="project-card glass-card fade-in slide-up delay-1" data-tilt>
+                        <div class="project-img-wrapper">
+                            <img src="assets/project_traffic.png" alt="Traffic Analysis Dashboard Preview" class="project-img">
+                        </div>
+                        <div class="project-header">
+                            <i data-lucide="bar-chart-2" size="32" color="#ffbd2e"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="Live Dashboard"><i data-lucide="external-link" size="20"></i></a>
+                            </div>
+                        </div>
+                        <h3>Traffic Analysis Dashboard</h3>
+                        <p>Designed and developed an interactive Power BI dashboard analyzing 3,000+ traffic records. Surfaced peak-hour congestion corridors and patterns for optimization.</p>
+                        <div class="project-learnings">
+                            <span class="learning-tag"><i data-lucide="lightbulb" size="12"></i> Data Analytics</span>
+                            <span class="learning-tag"><i data-lucide="lightbulb" size="12"></i> Business Intelligence</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Power BI</span><span>SQL</span><span>Excel</span><span>KPI Tracking</span>
+                        </div>
+                    </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -285,7 +382,39 @@
             <div class="container">
                 <h2 class="section-title fade-in slide-up">Experience</h2>
                 <div class="timeline">
+                    <!-- Experience 1: Project Trainee -->
                     <div class="timeline-item fade-in slide-up delay-1">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">May 2026 – Aug 2026</span>
+                            <h3 class="timeline-role">Project Trainee</h3>
+                            <h4 class="timeline-company">AI Centre of Excellence (AICOE), Tata Communications, Remote</h4>
+                            <ul class="timeline-tasks">
+                                <li><i data-lucide="check-circle" size="16"></i> Evaluated and functionally tested an AutoML platform across multiple ML classification models, documenting workflow behavior in technical and testing reports.</li>
+                                <li><i data-lucide="check-circle" size="16"></i> Assisted in validating an AI-powered chatbot/agent concept for internet service operations, contributing to chatbot flow design discussions, client/stakeholder meetings, and requirement gathering.</li>
+                                <li><i data-lucide="check-circle" size="16"></i> Used Microsoft Copilot to accelerate research, documentation, and day-to-day productivity tasks.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2: Co-Founder & Business Development Partner -->
+                    <div class="timeline-item fade-in slide-up delay-2">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2025 – 2026</span>
+                            <h3 class="timeline-role">Co-Founder & Business Development Partner</h3>
+                            <h4 class="timeline-company">ApnaSafar, Mumbai</h4>
+                            <ul class="timeline-tasks">
+                                <li><i data-lucide="check-circle" size="16"></i> Co-founded and operationally managed a travel business from a physical office, overseeing end-to-end sales, customer relationship management, and vendor coordination.</li>
+                                <li><i data-lucide="check-circle" size="16"></i> Managed a portfolio of 30+ active client inquiries, converting leads into confirmed bookings through needs-based travel planning and negotiation.</li>
+                                <li><i data-lucide="check-circle" size="16"></i> Negotiated terms with travel vendors to optimize margins and ensure service quality.</li>
+                                <li><i data-lucide="check-circle" size="16"></i> Managed customer lifecycle from booking to post-trip support, establishing high repeat patronage.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3: Android Intern -->
+                    <div class="timeline-item fade-in slide-up delay-3">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card">
                             <span class="timeline-date">Jul 2022 – Aug 2022</span>
@@ -295,6 +424,22 @@
                                 <li><i data-lucide="check-circle" size="16"></i> Developed and tested Android application modules using Java and Android Studio.</li>
                                 <li><i data-lucide="check-circle" size="16"></i> Assisted in designing UI components to improve student usability.</li>
                                 <li><i data-lucide="check-circle" size="16"></i> Collaborated with the development team to resolve issues and meet project deadlines.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 4: Operations & Customer Experience Associate -->
+                    <div class="timeline-item fade-in slide-up delay-4">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2021 – 2022</span>
+                            <h3 class="timeline-role">Operations & Customer Experience Associate</h3>
+                            <h4 class="timeline-company">Hidden Village Restaurant (Family Business), Mumbai</h4>
+                            <ul class="timeline-tasks">
+                                <li><i data-lucide="check-circle" size="16"></i> Coordinated front-of-house and back-of-house restaurant operations, streamlining staff communication and reducing bottlenecks.</li>
+                                <li><i data-lucide="check-circle" size="16"></i> Monitored guest dining trends and feedback, implementing actionable improvements to enhance customer satisfaction.</li>
+                                <li><i data-lucide="check-circle" size="16"></i> Assisted in inventory supply planning and supply coordination, contributing to cost efficiency.</li>
+                                <li><i data-lucide="check-circle" size="16"></i> Handled real-time customer complaints and service recovery, ensuring resolution within the same visit.</li>
                             </ul>
                         </div>
                     </div>
@@ -311,36 +456,85 @@
                     <div class="timeline-item fade-in slide-up delay-1">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card">
-                            <span class="timeline-date">2024–Present</span>
-                            <h3 class="timeline-role">B.Tech in Electronics and Computer Science</h3>
-                            <h4 class="timeline-company">Vivekanand Education Society’s Institute of Technology (VESIT), Mumbai</h4>
+                            <div class="timeline-header">
+                                <div class="timeline-title-area">
+                                    <span class="timeline-date">2024–Present</span>
+                                    <h3 class="timeline-role">B.Tech in Electronics and Computer Science</h3>
+                                    <h4 class="timeline-company">Vivekanand Education Society’s Institute of Technology (VESIT), Mumbai</h4>
+                                    <p class="timeline-cgpa" style="margin-top: 10px; font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent-secondary); display: flex; align-items: center; gap: 6px;"><i data-lucide="award" size="16"></i>CGPA: 8.58 (up to 6th Sem)</p>
+                                </div>
+                                <div class="timeline-logo-wrapper">
+                                    <img src="assets/edu_vesit.png" alt="VESIT Logo" class="timeline-logo">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- B.Sc -->
                     <div class="timeline-item fade-in slide-up delay-2">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card">
-                            <span class="timeline-date">2023–2024</span>
-                            <h3 class="timeline-role">B.Sc (Hons) in Computing (UK Course)</h3>
-                            <h4 class="timeline-company">Vidyalankar Institute of International Education, Mumbai</h4>
+                            <div class="timeline-header">
+                                <div class="timeline-title-area">
+                                    <span class="timeline-date">2023–2024</span>
+                                    <h3 class="timeline-role">B.Sc (Hons) in Computing (UK Course)</h3>
+                                    <h4 class="timeline-company">Vidyalankar Institute of International Education, Mumbai</h4>
+                                </div>
+                                <div class="timeline-logo-wrapper">
+                                    <img src="assets/edu_viie.png" alt="VIIE Logo" class="timeline-logo">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Diploma -->
                     <div class="timeline-item fade-in slide-up delay-3">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card">
-                            <span class="timeline-date">2020–2023</span>
-                            <h3 class="timeline-role">Diploma in Computer Engineering</h3>
-                            <h4 class="timeline-company">Vidyalankar Polytechnic, Mumbai</h4>
+                            <div class="timeline-header">
+                                <div class="timeline-title-area">
+                                    <span class="timeline-date">2020–2023</span>
+                                    <h3 class="timeline-role">Diploma in Computer Engineering</h3>
+                                    <h4 class="timeline-company">Vidyalankar Polytechnic, Mumbai</h4>
+                                </div>
+                                <div class="timeline-logo-wrapper">
+                                    <img src="assets/edu_vp.png" alt="Vidyalankar Polytechnic Logo" class="timeline-logo">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- SSC -->
                     <div class="timeline-item fade-in slide-up delay-4">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card">
-                            <span class="timeline-date">2020</span>
-                            <h3 class="timeline-role">SSC Education</h3>
-                            <h4 class="timeline-company">Holy Family School, Ulhasnagar</h4>
+                            <div class="timeline-header">
+                                <div class="timeline-title-area">
+                                    <span class="timeline-date">2020</span>
+                                    <h3 class="timeline-role">SSC Education</h3>
+                                    <h4 class="timeline-company">Holy Family School, Ulhasnagar</h4>
+                                </div>
+                                <div class="timeline-logo-wrapper">
+                                    <img src="assets/edu_holy_family.png" alt="Holy Family School Logo" class="timeline-logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="certifications-container fade-in slide-up delay-4" style="margin-top: 50px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 25px; text-align: center; color: var(--text-primary); display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <i data-lucide="badge-check" size="28" style="color: var(--accent-secondary);"></i> Certifications
+                    </h3>
+                    <div class="certification-card glass-card" style="display: flex; align-items: center; gap: 20px; padding: 25px;">
+                        <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.08); display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="database" size="36" style="color: var(--accent-secondary);"></i>
+                        </div>
+                        <div style="flex-grow: 1;">
+                            <span class="timeline-date" style="margin-bottom: 8px;">February 2025</span>
+                            <h4 style="font-size: 1.25rem; margin-bottom: 5px; color: var(--text-primary);">SQL & PostgreSQL: The Complete Developer's Guide</h4>
+                            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 12px;">Issued by Udemy</p>
+                            <div class="project-tech" style="margin-top: 0;">
+                                <span>SQL Querying</span><span>PostgreSQL</span><span>Joins & Relationships</span><span>Database Fundamentals</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -352,83 +546,87 @@
             <div class="container">
                 <h2 class="section-title fade-in slide-up">Jack of Many Trades</h2>
                 <p class="jack-subtitle fade-in slide-up">I don't just code in one lane — I explore.</p>
-                <div class="jack-grid">
-                    <!-- Card 1: Web Development -->
-                    <div class="jack-card glass-card fade-in slide-up delay-1">
-                        <div class="jack-card-icon"><i data-lucide="layout" size="32" color="var(--accent-primary)"></i></div>
-                        <h3>Web Development</h3>
-                        <p>Building responsive and dynamic interfaces using HTML, CSS, JavaScript, and React.</p>
-                        <ul class="jack-card-tags">
-                            <li>HTML5 / CSS3</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>UI Design</li>
-                        </ul>
-                    </div>
+                <div class="projects-wrapper">
+                    <button class="slider-btn prev-btn jack-prev-btn" aria-label="Previous Category"><i data-lucide="chevron-left"></i></button>
+                    <button class="slider-btn next-btn jack-next-btn" aria-label="Next Category"><i data-lucide="chevron-right"></i></button>
+                    <div class="jack-grid">
+                        <!-- Card 1: Web Development -->
+                        <div class="jack-card glass-card fade-in slide-up delay-1">
+                            <div class="jack-card-icon"><i data-lucide="layout" size="32" color="var(--accent-primary)"></i></div>
+                            <h3>Web Development</h3>
+                            <p>Building responsive and dynamic interfaces using HTML, CSS, JavaScript, and React.</p>
+                            <ul class="jack-card-tags">
+                                <li>HTML5 / CSS3</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>UI Design</li>
+                            </ul>
+                        </div>
 
-                    <!-- Card 2: Desktop Apps -->
-                    <div class="jack-card glass-card fade-in slide-up delay-2">
-                        <div class="jack-card-icon"><i data-lucide="monitor" size="32" color="var(--accent-secondary)"></i></div>
-                        <h3>Desktop Apps</h3>
-                        <p>Creating robust desktop applications using C#, .NET, and Windows Forms.</p>
-                        <ul class="jack-card-tags">
-                            <li>C#</li>
-                            <li>.NET</li>
-                            <li>WinForms</li>
-                            <li>Visual Studio</li>
-                        </ul>
-                    </div>
+                        <!-- Card 2: Desktop Apps -->
+                        <div class="jack-card glass-card fade-in slide-up delay-2">
+                            <div class="jack-card-icon"><i data-lucide="monitor" size="32" color="var(--accent-secondary)"></i></div>
+                            <h3>Desktop Apps</h3>
+                            <p>Creating robust desktop applications using C#, .NET, and Windows Forms.</p>
+                            <ul class="jack-card-tags">
+                                <li>C#</li>
+                                <li>.NET</li>
+                                <li>WinForms</li>
+                                <li>Visual Studio</li>
+                            </ul>
+                        </div>
 
-                    <!-- Card 3: Databases -->
-                    <div class="jack-card glass-card fade-in slide-up delay-3">
-                        <div class="jack-card-icon"><i data-lucide="database" size="32" color="#ffbd2e"></i></div>
-                        <h3>Databases</h3>
-                        <p>Designing schemas, writing efficient SQL, and working with MySQL & MongoDB.</p>
-                        <ul class="jack-card-tags">
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                            <li>Data Modeling</li>
-                            <li>Queries</li>
-                        </ul>
-                    </div>
+                        <!-- Card 3: Databases -->
+                        <div class="jack-card glass-card fade-in slide-up delay-3">
+                            <div class="jack-card-icon"><i data-lucide="database" size="32" color="#ffbd2e"></i></div>
+                            <h3>Databases</h3>
+                            <p>Designing schemas, writing efficient SQL, and working with MySQL & MongoDB.</p>
+                            <ul class="jack-card-tags">
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                                <li>Data Modeling</li>
+                                <li>Queries</li>
+                            </ul>
+                        </div>
 
-                    <!-- Card 4: System Concepts -->
-                    <div class="jack-card glass-card fade-in slide-up delay-4">
-                        <div class="jack-card-icon"><i data-lucide="cpu" size="32" color="#27c93f"></i></div>
-                        <h3>System Concepts</h3>
-                        <p>Understanding OS fundamentals, networking, Linux, and SDLC methodologies.</p>
-                        <ul class="jack-card-tags">
-                            <li>Linux / Unix</li>
-                            <li>Networking</li>
-                            <li>SDLC</li>
-                            <li>Testing</li>
-                        </ul>
-                    </div>
+                        <!-- Card 4: System Concepts -->
+                        <div class="jack-card glass-card fade-in slide-up delay-4">
+                            <div class="jack-card-icon"><i data-lucide="cpu" size="32" color="#27c93f"></i></div>
+                            <h3>System Concepts</h3>
+                            <p>Understanding OS fundamentals, networking, Linux, and SDLC methodologies.</p>
+                            <ul class="jack-card-tags">
+                                <li>Linux / Unix</li>
+                                <li>Networking</li>
+                                <li>SDLC</li>
+                                <li>Testing</li>
+                            </ul>
+                        </div>
 
-                    <!-- Card 5: Android Dev -->
-                    <div class="jack-card glass-card fade-in slide-up delay-1">
-                        <div class="jack-card-icon"><i data-lucide="smartphone" size="32" color="#a855f7"></i></div>
-                        <h3>Android Dev</h3>
-                        <p>Building mobile apps with Java, Android Studio, and understanding the Android lifecycle.</p>
-                        <ul class="jack-card-tags">
-                            <li>Java</li>
-                            <li>Studio IDE</li>
-                            <li>XML Layouts</li>
-                            <li>Lifecycle</li>
-                        </ul>
-                    </div>
+                        <!-- Card 5: Android Dev -->
+                        <div class="jack-card glass-card fade-in slide-up delay-1">
+                            <div class="jack-card-icon"><i data-lucide="smartphone" size="32" color="#a855f7"></i></div>
+                            <h3>Android Dev</h3>
+                            <p>Building mobile apps with Java, Android Studio, and understanding the Android lifecycle.</p>
+                            <ul class="jack-card-tags">
+                                <li>Java</li>
+                                <li>Studio IDE</li>
+                                <li>XML Layouts</li>
+                                <li>Lifecycle</li>
+                            </ul>
+                        </div>
 
-                    <!-- Card 6: Problem Solving -->
-                    <div class="jack-card glass-card fade-in slide-up delay-2">
-                        <div class="jack-card-icon"><i data-lucide="puzzle" size="32" color="#f97316"></i></div>
-                        <h3>Problem Solving</h3>
-                        <p>Tackling DSA challenges, optimizing logic, and thinking in algorithms.</p>
-                        <ul class="jack-card-tags">
-                            <li>DSA</li>
-                            <li>OOPs</li>
-                            <li>Optimization</li>
-                            <li>Debugging</li>
-                        </ul>
+                        <!-- Card 6: Problem Solving -->
+                        <div class="jack-card glass-card fade-in slide-up delay-2">
+                            <div class="jack-card-icon"><i data-lucide="puzzle" size="32" color="#f97316"></i></div>
+                            <h3>Problem Solving</h3>
+                            <p>Tackling DSA challenges, optimizing logic, and thinking in algorithms.</p>
+                            <ul class="jack-card-tags">
+                                <li>DSA</li>
+                                <li>OOPs</li>
+                                <li>Optimization</li>
+                                <li>Debugging</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -542,7 +740,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=3"></script>
     <script>
         // Initialize Lucide icons
         lucide.createIcons();

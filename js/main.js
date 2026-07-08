@@ -370,11 +370,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const typingEl = document.getElementById('typing-role');
     if (typingEl) {
         const roles = [
-            'Electronics & CS Student',
-            'Full-Stack Developer',
-            'Android Enthusiast',
-            'Problem Solver',
-            'Cricket Fan  🏏'
+            'Business Analyst',
+            'Operations Specialist',
+            'Aspiring Product Manager',
+            'Electronics & CS Scholar',
+            'Entrepreneur & Builder'
         ];
         let roleIndex = 0;
         let charIndex = 0;
@@ -471,6 +471,137 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // =============================================
+    // PROJECTS SLIDER NAVIGATION
+    // =============================================
+    const projectsGrid = document.querySelector('.projects-grid');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+
+    if (projectsGrid && prevBtn && nextBtn) {
+        const getScrollAmount = () => {
+            const card = projectsGrid.querySelector('.project-card');
+            if (card) {
+                return card.clientWidth + 30; // Card width + gap
+            }
+            return 380;
+        };
+
+        prevBtn.addEventListener('click', () => {
+            projectsGrid.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            projectsGrid.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+        });
+
+        const toggleButtons = () => {
+            const scrollLeft = projectsGrid.scrollLeft;
+            const maxScroll = projectsGrid.scrollWidth - projectsGrid.clientWidth;
+            
+            // Fade prev button if at the start
+            if (scrollLeft <= 5) {
+                prevBtn.style.opacity = '0.2';
+                prevBtn.style.pointerEvents = 'none';
+            } else {
+                prevBtn.style.opacity = '1';
+                prevBtn.style.pointerEvents = 'auto';
+            }
+
+            // Fade next button if at the end
+            if (scrollLeft >= maxScroll - 5) {
+                nextBtn.style.opacity = '0.2';
+                nextBtn.style.pointerEvents = 'none';
+            } else {
+                nextBtn.style.opacity = '1';
+                nextBtn.style.pointerEvents = 'auto';
+            }
+        };
+
+        projectsGrid.addEventListener('scroll', toggleButtons);
+        window.addEventListener('resize', toggleButtons);
+        // Initial state set after small delay for rendering
+        setTimeout(toggleButtons, 300);
+    }
+
+    // =============================================
+    // JACK OF MANY TRADES SLIDER NAVIGATION
+    // =============================================
+    const jackGrid = document.querySelector('.jack-grid');
+    const jackPrevBtn = document.querySelector('.jack-prev-btn');
+    const jackNextBtn = document.querySelector('.jack-next-btn');
+
+    if (jackGrid && jackPrevBtn && jackNextBtn) {
+        const getJackScrollAmount = () => {
+            const card = jackGrid.querySelector('.jack-card');
+            if (card) {
+                return card.clientWidth + 30; // Card width + gap
+            }
+            return 380;
+        };
+
+        jackPrevBtn.addEventListener('click', () => {
+            jackGrid.scrollBy({ left: -getJackScrollAmount(), behavior: 'smooth' });
+        });
+
+        jackNextBtn.addEventListener('click', () => {
+            jackGrid.scrollBy({ left: getJackScrollAmount(), behavior: 'smooth' });
+        });
+
+        const toggleJackButtons = () => {
+            const scrollLeft = jackGrid.scrollLeft;
+            const maxScroll = jackGrid.scrollWidth - jackGrid.clientWidth;
+            
+            if (scrollLeft <= 5) {
+                jackPrevBtn.style.opacity = '0.2';
+                jackPrevBtn.style.pointerEvents = 'none';
+            } else {
+                jackPrevBtn.style.opacity = '1';
+                jackPrevBtn.style.pointerEvents = 'auto';
+            }
+
+            if (scrollLeft >= maxScroll - 5) {
+                jackNextBtn.style.opacity = '0.2';
+                jackNextBtn.style.pointerEvents = 'none';
+            } else {
+                jackNextBtn.style.opacity = '1';
+                jackNextBtn.style.pointerEvents = 'auto';
+            }
+        };
+
+        jackGrid.addEventListener('scroll', toggleJackButtons);
+        window.addEventListener('resize', toggleJackButtons);
+        setTimeout(toggleJackButtons, 300);
+    }
+
+    // =============================================
+    // NAVBAR ACTIVE SCROLL SPY
+    // =============================================
+    const navSections = document.querySelectorAll('section[id], header[id]');
+    const navItemLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+        let currentSectionId = '';
+        const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+        navSections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            // Adjust threshold offset to match layout spacing
+            if (scrollPosition >= (sectionTop - 160)) {
+                currentSectionId = section.getAttribute('id');
+            }
+        });
+
+        navItemLinks.forEach(item => {
+            item.classList.remove('active');
+            const hrefAttr = item.getAttribute('href');
+            if (hrefAttr === `#${currentSectionId}`) {
+                item.classList.add('active');
+            }
+        });
+    });
 
     // --- Re-initialize Lucide Icons ---
     if (typeof lucide !== 'undefined') {
